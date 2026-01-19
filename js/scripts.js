@@ -13,8 +13,8 @@ const observer = new IntersectionObserver(
     { threshold: 0.3 }
 );
 
-// Observe toutes les boxes
 boxes.forEach((el) => observer.observe(el));
+
 // Effet parallax et opacité sur la hero
 const hero = document.querySelector(".hero-section .container");
 window.addEventListener("scroll", () => {
